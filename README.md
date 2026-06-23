@@ -1,7 +1,7 @@
 # SIMPLE 8080
 An emulator + assembler for the Intel 8080 written in C using only standard libraries.
 
-Currently, the emulator supports every 8080 instruction, as well as symbol definitions and assembler directives such as `Db` `DW` `DS` and `ORG`.
+Currently, the emulator supports every 8080 instruction, as well as symbol definitions and assembler directives such as `DB` `DW` `DS` and `ORG`.
 
 # Features
 - **Passes `TST8080.com` and `8080PRE.com`**
