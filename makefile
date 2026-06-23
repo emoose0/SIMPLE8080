@@ -2,7 +2,7 @@ flags = -c
 sources = $(wildcard *.c)
 headers = $(wildcard *.h)
 objects = $(sources:.c=.o$)
-exec = main.out
+exec = s8080
 
 main:
 	gcc $(flags) $(sources) $(headers)
