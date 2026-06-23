@@ -15,10 +15,8 @@ Currently, the emulator supports every 8080 instruction, as well as symbol defin
 
 # USAGE
 ```
-usage: s8080 file.asm/bin/com
-OPTIONS:
-
-
+usage: s8080 [file.asm/bin/com] [ARGS]
+ARGS:
 	-b: export as bin file
 	-c: export as com file
 	-p: print final results
