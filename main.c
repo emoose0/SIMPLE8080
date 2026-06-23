@@ -169,8 +169,8 @@ int main(int argc, const char* argv[]){
 	bool interrupts = false;
 
 	if(argc < 2){
-		printf("usage: s8080 file.asm/bin/com\n");
-		printf("OPTIONS:\n\n");
+		printf("usage: s8080 [file.asm/bin/com] [ARGS]\n");
+		printf("ARGS:");
 		printf("\n\t-b: export as bin file\n\t-c: export as com file\n\t-p: print final results\n\t-e: execute file\n\t-i: start with interrupts enables\n\n");
 		return -1;
 	}
