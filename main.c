@@ -16,9 +16,9 @@ EXT checkext(const char* filename){
 	if(dot == NULL) return ERROR;
 	if(dot - filename <= 0) return ERROR; //invalid file
 
-	if(strcmp(dot, ".asm") == 0) return DOTASM;
-	else if(strcmp(dot, ".bin") == 0) return DOTBIN;
-	else if(strcmp(dot, ".com") == 0) return DOTCOM;
+	if(strcmp(dot, ".asm") == 0 || strcmp(dot, ".ASM") == 0) return DOTASM;
+	else if(strcmp(dot, ".bin") == 0 || strcmp(dot, ".BIN") == 0) return DOTBIN;
+	else if(strcmp(dot, ".com") == 0 || strcmp(dot, ".COM")) return DOTCOM;
 
 	return ERROR;
 }
@@ -169,7 +169,7 @@ int main(int argc, const char* argv[]){
 	bool interrupts = false;
 
 	if(argc < 2){
-		printf("usage: c8080 file.asm/bin/com\n");
+		printf("usage: s8080 file.asm/bin/com\n");
 		printf("OPTIONS:\n\n");
 		printf("\n\t-b: export as bin file\n\t-c: export as com file\n\t-p: print final results\n\t-e: execute file\n\t-i: start with interrupts enables\n\n");
 		return -1;
